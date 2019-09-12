@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void swap(int *x,int *y){	                //fun to swap two values
+void swap(int *x,int *y){	                	//fun to swap two values
 	int temp;
 	temp = *x;
 	*x=*y;
@@ -11,7 +11,7 @@ void swap(int *x,int *y){	                //fun to swap two values
 int partition(int A[],int l, int h){  
 	int pivot = A[l];                     
 	int i=l,j=h;
-	do{                                     // Main Algo;
+	do{                                     	// Main Algo;
 		do{
 			i++;
 		}while(A[i]<=pivot);
@@ -24,15 +24,15 @@ int partition(int A[],int l, int h){
 	}while(i<j);
 	
 	swap(&A[l],&A[j]);
-	return j;                                 //returning the position from where partitions will be done;
+	return j;                                 	//returning the position from where partitions will be done;
 }
 
-void QuickSort(int A[],int l , int h){      //recursive function;
+void QuickSort(int A[],int l , int h){      		//recursive function;
 	int j;
-	if(l<h){			                            // to check there are atleast two elements;
-		j=partition(A,l,h);                     // Sorting the left partition recursively;
-		QuickSort(A,l,j);                       // Sorting the right partition recursively;
-		QuickSort(A,j+1,h);
+	if(l<h){			                // to check there are atleast two elements;
+		j=partition(A,l,h);                     
+		QuickSort(A,l,j);                       // Sorting the left partition recursively;
+		QuickSort(A,j+1,h);			// Sorting the right partition recursively;
 	}
 }
 
