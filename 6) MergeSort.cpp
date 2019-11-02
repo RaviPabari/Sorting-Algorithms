@@ -5,8 +5,8 @@ void Merge(int A[],int p,int q,int r){
 
 	/*
 	Assumes A to be a list and p,q and r an int
-  merges the sorted sub-lists into the single list A 
-  */
+  	merges the sorted sub-lists into the single list A 
+  	*/
   
 	int i,j,k;
 	int n1 = q-p+1;
@@ -26,7 +26,7 @@ void Merge(int A[],int p,int q,int r){
   
 		/*
 		what if the the first list becomes empty,then we have to copy the remaining
-	  elements from the second list to the sorted list...so this is the condition for that :)
+	  	elements from the second list to the sorted list...so this is the condition for that :)
 		*/
     
 		if(i==n1){				
@@ -59,7 +59,7 @@ void Sort(int A[],int p,int r){
 
 	/*
 	Divides A in subsequences , sorts them and then
-  merges sorted subsequences into A
+  	merges sorted subsequences into A
 	*/
   
 	if(p<r){
@@ -89,9 +89,7 @@ int main(){
 	}
 	int p,r;
 	p=0,r=n-1;
-  
 	Sort(A,p,r);
 	Display(A,n);
-	
-  return 0;
+ 	return 0;
 }
