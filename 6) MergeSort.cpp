@@ -61,7 +61,7 @@ void Sort(int A[],int p,int r){
 	Divides A in subsequences , sorts them and then
   	merges sorted subsequences into A
 	*/
-  
+ 
 	if(p<r){
 		int q = (p+r)/2;
 		Sort(A,p,q);
