@@ -25,10 +25,10 @@ void BubbleSort(int A[], int n){
 }
 
 int main(){
-	int A[] = {11,13,6,23,443,44,54,656,65,98}, n=10,i;
-	BubbleSort(A,n);
+	int A[] = {11,13,6,23,443,44,54,656,65,98}, temp=10,i;
+	BubbleSort(A,temp);
 	
-	for(i=0;i<n;i++){
+	for(i=0;i<temp;i++){
 		cout << A[i] << " " ;
 	}
 	return 0;
