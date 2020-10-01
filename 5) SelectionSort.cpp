@@ -30,7 +30,7 @@ void Display(int A[],int n){
 
 int main(){
 	int n;
-	cin  >> n;
+	cin  >> n;//taking input
 	int A[n];
 	for(int i=0;i<n;i++){
 		cin >>A[i];
