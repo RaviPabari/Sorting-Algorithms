@@ -18,7 +18,7 @@ int main(){
 			}
 		}
 	}
-	cout <<endl << "Names sorted in Dictionary order :" << endl;
+	cout <<endl << "Names sorted  order :" << endl;
 	for(i=0;i<=5;i++){
 		cout << str[i] <<endl ;
 	}
