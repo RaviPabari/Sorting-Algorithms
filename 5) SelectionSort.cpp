@@ -9,7 +9,7 @@ void swap(int *p,int *q){
 	*q = temp;
 }
 
-void SelectionSort(int A[],int n){
+void SelectSort(int A[],int n){
 	int i,j,min;
 	for(i=0;i<n-1;i++){
 		min = i;
@@ -30,12 +30,12 @@ void Display(int A[],int n){
 
 int main(){
 	int n;
-	cin  >> n;
+	cin  >> n;//taking input
 	int A[n];
 	for(int i=0;i<n;i++){
 		cin >>A[i];
 	}
-	SelectionSort(A,n);
+	SelectSort(A,n);
 	Display(A,n);
 	return 0;
 }
