@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdlib.h>
+#include<math.h>
 using namespace std;
 void swap(int *x, int *y){
 	int temp=*x;
