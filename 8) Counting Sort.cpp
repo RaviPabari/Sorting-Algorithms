@@ -33,13 +33,7 @@ void countSort(char arr[])
 		--count[arr[i]]; 
 	} 
 
-	/* 
-	For Stable algorithm 
-	for (i = sizeof(arr)-1; i>=0; --i) 
-	{ 
-		output[count[arr[i]]-1] = arr[i]; 
-		--count[arr[i]]; 
-	} 
+	
 	
 	For Logic : See implementation 
 	*/
