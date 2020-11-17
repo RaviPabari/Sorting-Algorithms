@@ -26,7 +26,7 @@ void BubbleSort(int A[], int n){
 
 int main(){
 	int A[] = {11,13,6,23,443,44,54,656,65,98}, n=10,i;
-	BubbleSort(A,n);
+	BubbleSort(A,n);//bubble sort
 	
 	for(i=0;i<n;i++){
 		cout << A[i] << " " ;
